@@ -6,42 +6,9 @@ namespace Animal_Management_System
 {
     class Cat : ITerrestrialAnimal
     {
-        public int id;
-        public string name;
-        public int age;
-        public int ID
-        {
-            set
-            {
-                id = value;
-            }
-            get
-            {
-                return id;
-            }
-        }
-        public string Name
-        {
-            set
-            {
-                name = value;
-            }
-            get
-            {
-                return name;
-            }
-        }
-        public int Age
-        {
-            set
-            {
-                age = value;
-            }
-            get
-            {
-                return age;
-            }
-        }
+        public int ID { get; set; }
+        public string Name { get; set; }
+        public int Age { get; set; }
         public void Move()
         {
             Console.WriteLine("RUN");
